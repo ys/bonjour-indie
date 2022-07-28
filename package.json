@@ -25,9 +25,6 @@
     "@indiekit/store-github": "^1.0.0-alpha.12"
   },
   "indiekit": {
-    "application": {
-      "mongodbUrl": "${ORMONGO_URL}"
-    },
     "plugins": [
       "@indiekit/store-github",
       "@indiekit/endpoint-micropub",
