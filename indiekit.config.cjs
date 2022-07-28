@@ -3,7 +3,7 @@ require("dotenv").config();
 
 module.exports = {
   application: {
-    mongodbUrl: process.env.ORMONGO_URL
+    mongodbUrl: process.env.MONGO_URL
   },
   plugins: [
     "@indiekit/preset-hugo",
