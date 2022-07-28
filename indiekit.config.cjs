@@ -28,7 +28,7 @@ module.exports = {
           url: "journal/{yyyy}/{MM}/{slug}"
         },
         media: {
-          path: "media/photos/{yyyy}/{filename}"
+          path: "journal/{yyyy}/{MM}/{slug}/{filename}"
         }
       }
     ]
