@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ys/bonjour-indie#readme",
   "dependencies": {
+    "@indiekit/endpoint-micropub": "^1.0.0-alpha.12",
     "@indiekit/indiekit": "^1.0.0-alpha.12",
     "@indiekit/preset-hugo": "^1.0.0-alpha.9",
     "@indiekit/store-github": "^1.0.0-alpha.12"
@@ -26,7 +27,8 @@
   "indiekit": {
     "plugins": [
       "@indiekit/store-github",
-     "@indiekit/preset-hugo"
+      "@indiekit/endpoint-micropub",
+      "@indiekit/preset-hugo"
     ],
     "@indiekit/preset-hugo": {
       "frontMatterFormat": "yaml"
