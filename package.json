@@ -37,6 +37,7 @@
     },
     "publication": {
       "me": "https://yannickschutz.com",
+      "authorizationEndpoint": "https://indielogin.com/auth",
       "postTypes": [
         {
           "type": "note",
