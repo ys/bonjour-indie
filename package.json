@@ -1,0 +1,60 @@
+{
+  "name": "bonjour-indie",
+  "version": "1.0.0",
+  "description": "Indiekit for bonjour",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ys/bonjour-indie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ys/bonjour-indie/issues"
+  },
+  "homepage": "https://github.com/ys/bonjour-indie#readme",
+  "dependencies": {
+    "@indiekit/indiekit": "^1.0.0-alpha.12",
+    "@indiekit/preset-hugo": "^1.0.0-alpha.9",
+    "@indiekit/store-github": "^1.0.0-alpha.12"
+  },
+  "indiekit": {
+    "plugins": [
+      "@indiekit/store-github",
+     "@indiekit/preset-hugo"
+    ],
+    "@indiekit/preset-hugo": {
+      "frontMatterFormat": "yaml"
+    },
+    "@indiekit/store-github": {
+      "user": "ys",
+      "repo": "bonjour"
+    },
+    "publication": {
+      "me": "https://yannickschutz.com",
+      "postTypes": [
+        {
+          "type": "note",
+          "name": "Journal entry",
+          "post": {
+            "path": "journal/{yyyy}-{MM}-{dd}-{slug}.md",
+            "url": "journal/{yyyy}/{MM}/{slug}"
+          }
+        },
+        {
+          "type": "photo",
+          "name": "Photograph",
+          "post": {
+            "path": "journal/{yyyy}-{MM}-{dd}-{slug}.md",
+            "url": "journal/{yyyy}/{MM}/{slug}"
+          },
+          "media": {
+            "path": "media/photos/{yyyy}/{filename}"
+          }
+        }
+      ]
+    }
+  }
+}
