@@ -9,6 +9,9 @@
     "type": "git",
     "url": "git+https://github.com/ys/bonjour-indie.git"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {

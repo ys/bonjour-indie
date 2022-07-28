@@ -1,0 +1,1 @@
+web: npx indiekit serve
