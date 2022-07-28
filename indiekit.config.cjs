@@ -16,19 +16,19 @@ module.exports = {
         type: "note",
         name: "Journal entry",
         post: {
-          path: "journal/{yyyy}-{MM}-{dd}-{slug}.md",
-          url: "journal/{yyyy}/{MM}/{slug}"
+          path: "content/journal/{yyyy}-{MM}-{dd}-{slug}/index.md",
+          url: "journal/{yyyy}/{MM}/{{dd}}/{slug}"
         }
       },
       {
         type: "photo",
         name: "Photograph",
         post: {
-          path: "journal/{yyyy}-{MM}-{dd}-{slug}.md",
-          url: "journal/{yyyy}/{MM}/{slug}"
+          path: "content/journal/{yyyy}-{MM}-{dd}-{slug}/index.md",
+          url: "journal/{yyyy}/{MM}/{dd}}/{slug}"
         },
         media: {
-          path: "journal/{yyyy}/{MM}/{slug}/{filename}"
+          path: "content/journal/{yyyy}-{MM}-{dd}-{slug}/{filename}"
         }
       }
     ]
