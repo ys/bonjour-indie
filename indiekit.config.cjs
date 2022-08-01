@@ -16,24 +16,24 @@ module.exports = {
         type: "note",
         name: "Journal entry",
         post: {
-          path: "content/journal/{yyyy}-{MM}-{dd}-{slug}/index.md",
-          url: "journal/{yyyy}/{MM}/{{dd}}/{slug}"
+          path: "content/journal/{yyyy}-{MM}-{dd}-{slug}.md",
+          url: "/journal/{yyyy}-{MM}-{dd}-{slug}"
         },
         media: {
-          path: "content/journal/{yyyy}/{MM}/{dd}/{filename}",
-          url: "content/journal/{yyyy}/{MM}/{dd}/{filename}"
+          path: "content/journal/images/{yyyy}-{MM}-{dd}-{filename}",
+          url: "{yyyy}-{MM}-{dd}-{filename}"
         }
       },
       {
         type: "photo",
         name: "Photograph",
         post: {
-          path: "content/journal/{yyyy}-{MM}-{dd}-{slug}/index.md",
-          url: "journal/{yyyy}/{MM}/{dd}}/{slug}"
+          path: "content/journal/{yyyy}-{MM}-{dd}-{slug}.md",
+          url: "journal/{yyyy}-{MM}-{dd}-{slug}"
         },
         media: {
-          path: "content/journal/{yyyy}/{MM}/{dd}/{filename}",
-          url: "content/journal/{yyyy}/{MM}/{dd}/{filename}"
+          path: "content/journal/images/{yyyy}-{MM}-{dd}-{filename}",
+          url: "{yyyy}-{MM}-{dd}-{filename}"
         }
       }
     ]
