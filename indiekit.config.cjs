@@ -18,6 +18,10 @@ module.exports = {
         post: {
           path: "content/journal/{yyyy}-{MM}-{dd}-{slug}/index.md",
           url: "journal/{yyyy}/{MM}/{{dd}}/{slug}"
+        },
+        media: {
+          path: "content/journal/{yyyy}/{MM}/{dd}/{filename}",
+          url: "content/journal/{yyyy}/{MM}/{dd}/{filename}"
         }
       },
       {
@@ -28,7 +32,8 @@ module.exports = {
           url: "journal/{yyyy}/{MM}/{dd}}/{slug}"
         },
         media: {
-          path: "content/journal/{yyyy}-{MM}-{dd}-{slug}/{filename}"
+          path: "content/journal/{yyyy}/{MM}/{dd}/{filename}",
+          url: "content/journal/{yyyy}/{MM}/{dd}/{filename}"
         }
       }
     ]
